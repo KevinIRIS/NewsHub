@@ -1,5 +1,40 @@
 # NewsHub
 
+Newshub is a service to predict stock market by collecting social media stream
+
+## Prerequisites
+* python 2.7
+* virtualenv
+
+#### Prerequisite installations
+For Mac users, installing dependencies through Homebrew is probably the most convenient way.
+
+[Homebrew page](http://brew.sh/index.html), with instructions for installation
+
+Run ./init.sh to install Homebrew dependencies, python dependencies for Newshub.
+
+init.sh runs the following commands:
+
+###### Install Brew Dependencies
+
+```
+brew update
+brew install python
+```
+
+##### Install Python Dependencies
+```
+pip install virtualenv
+virtualenv ~/lqd_virt_env
+source ~/lqd_Virt_env/bin/activate
+pip install -r crawler/requirements.txt --target crawler/packages 
+
+```
+
+init.sh pip installs requirements.txt for /crawler.
+
+
+## License
 MIT License
 
 Copyright (c) 2017 Kevin Zhang
